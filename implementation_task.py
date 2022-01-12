@@ -22,7 +22,6 @@ class buku_kontak_maju_jaya:
         if self.tail:
             self.tail.next = node
             self.tail = node
-
         else:
             self.head = node
             self.tail = node
@@ -41,9 +40,10 @@ class buku_kontak_maju_jaya:
                 if target == nama[0]:
                     print(f"Ditemukan {nama[0]} : {nama[1]}")
                     break
-
                 else:
                     current = current.next
+            else:
+                print(f"Kontak {target} tidak tersedia")
 
 
     def cari_kontak_prefix(self, pretarget):
@@ -58,7 +58,6 @@ class buku_kontak_maju_jaya:
                     x = current.data.split(",")
                     print(f"Ditemukan {x[0]} : {x[1]}")
                     current = current.next
-                    
                 else:
                     current = current.next
 
@@ -81,6 +80,8 @@ class buku_kontak_maju_jaya:
 
                 else:
                     current = current.next
+            else:
+                print(f"Kontak {target} tidak tersedia")
 
 
     def tampilkan_daftar_kontak(self):
