@@ -1,3 +1,7 @@
+"""                                 Implementation Task
+implementation task of creating a simple contact book for data structure and algorithm courses
+"""
+
 class Node:
     # Node untuk singly Linkedlist
     def __init__(self, data):
