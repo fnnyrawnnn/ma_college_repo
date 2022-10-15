@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Table</title>
+
+    <style>
+      .style {
+        color: black;
+        width: 100%;
+      }
+      table, tr, th {
+        border: 1px;
+        border-style:double;
+        border-color: darkblue;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="style">
+      <tr>
+        <th>1,1</th>
+        <th>1,2</th>
+        <th>1,3</th>
+        <th>1,4</th>
+        <th rowspan="6">?</th>
+        <th>1,6</th>
+      </tr>
+
+      <tr>
+        <th>2,1</th>
+        <th rowspan="2" colspan="2">?</th>
+        <th>2,4</th>
+        <th>2,6</th>
+      </tr>
+
+      <tr>
+        <th>3,1</th>
+        <th>3,4</th>
+        <th>3,6</th>
+      </tr>
+
+      <tr>
+        <th>4,1</th>
+        <th>4,2</th>
+        <th>4,3</th>
+        <th>4,4</th>
+        <th>4,6</th>
+      </tr>
+
+      <tr>
+        <th colspan="4">?</th>
+        <th>5,6</th>
+      </tr>
+
+      <tr>
+        <th>6,1</th>
+        <th>6,2</th>
+        <th>6,3</th>
+        <th>6,4</th>
+        <th>6,6</th>
+      </tr>
+    </table>
+  </body>
+</html>
